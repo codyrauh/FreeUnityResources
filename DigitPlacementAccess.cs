@@ -29,15 +29,13 @@ public class DigitPlacementAccess : MonoBehaviour
     public int digitOnes;
 
     //this will be the number provided by an external variable for breakdown into single digits.
+    //can be written as [SerializeField] public int breakDownNumber; if you wish to edit through inspector.
+    //if you wish to hardcode the value type public int breakDownNumber = 143;
     public int breakDownNumber;
-
-    [SerializeField] private int totalLoopsProcessed;
+    
 
     public void NumberDissection() 
     {
-        //for testing purposes, comment out when not testing
-        //currentNumberSize = mathTest;
-
         digitMillions= breakDownNumber / 1000000 %10;
         digitHundredThousands = breakDownNumber / 100000 % 10;
         digitTenThousands = breakDownNumber / 10000 % 10;
