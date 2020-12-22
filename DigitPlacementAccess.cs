@@ -34,6 +34,7 @@ public class DigitPlacementAccess : MonoBehaviour
     public int breakDownNumber;
     
 
+    // you can either put this in your start method, or call this custom method from another script.
     public void NumberDissection() 
     {
         digitMillions= breakDownNumber / 1000000 %10;
